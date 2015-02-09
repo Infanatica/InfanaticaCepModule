@@ -30,7 +30,7 @@ return array(
                                 '__NAMESPACE__' => 'InfanaticaCepModule\Controller',
                                 'controller'    => 'Cep',
                                 'action'        => 'getEnderecoByCep',
-                                'format'        => 'json'
+                                'formato'        => 'json'
 
                             ),
                         ),
@@ -42,7 +42,7 @@ return array(
                             'route'    => '/:cep:/:formato',
                              'defaults' => array(
                                 'action'=> 'getEnderecobyCep',
-                                'format'=>'json'
+                                'formato'=>'json'
                             ),
                         ),
                     ),

@@ -50,10 +50,11 @@ class CepController extends AbstractActionController
     {
         $arrayFormatos = array(
             'xml'=>'text/xml; charset=utf-8',
-            'json'=>
+            'json'=> 'application/json; charset=utf-8'
         );
         $response = $this->httpResponse;
-        $response->getHeaders()->addHeaderLine('Content-Type', 'text/xml; charset=utf-8');
-
+        $response->getHeaders()->addHeaderLine('Content-Type', $arrayFormatos[$formato]);
+        $response->setContent($endereco);
+        return $response;
     }
 }

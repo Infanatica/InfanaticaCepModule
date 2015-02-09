@@ -1,0 +1,9 @@
+<?php
+
+return array(
+    'service_manager' => array(
+        'aliases' => array(
+            'InfanaticaCepModule\Adapter\CepDefaultAdapter' => 'InfanaticaCepModule\Service\ViaCepAdapter'
+        ),
+    ),
+);

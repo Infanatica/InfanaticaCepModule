@@ -49,7 +49,7 @@ class EnderecoResponse {
     public function toXml()
     {
         $array = $this->toArray();
-        $xml = new \SimpleXMLElement('<root/>');
+        $xml = new \SimpleXMLElement('<endereco/>');
         foreach ($array as $key => $value)
         {
             $xml->addChild($key, $value);
