@@ -2,7 +2,7 @@
 
 namespace InfanaticaCepModule\Response;
 
-class EnderecoResponse {
+class EnderecoResponse implements EnderecoResponseInterface{
 
     /** @var  string */
     protected $logradouro;
@@ -48,13 +48,24 @@ class EnderecoResponse {
 
     public function toXml()
     {
-        $array = $this->toArray();
+        $enderecoArray = $this->toArray();
         $xml = new \SimpleXMLElement('<endereco/>');
-        foreach ($array as $key => $value)
+        foreach ($enderecoArray as $key => $value)
         {
             $xml->addChild($key, $value);
         }
-        print $xml->asXML();
+        return $xml->asXML();
+    }
+
+    public function toPiped()
+    {
+        $enderecoArray  = $this->toArray();
+        $enderecoString = 'logradoudo:' . $enderecoArray['logradouro'] . '|' .
+                          'bairro:'     . $enderecoArray['bairro']     . '|' .
+                          'localidade:' . $enderecoArray['localidade'] . '|' .
+                          'uf:'         . $enderecoArray['uf'];
+
+        return $enderecoString;
     }
 
     /**
