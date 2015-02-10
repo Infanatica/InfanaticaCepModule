@@ -3,6 +3,8 @@
 namespace InfanaticaCepModule\Service;
 use InfanaticaCepModule\Adapter\CepAdapterInterface;
 use InfanaticaCepModule\Exception\EnderecoFormatException;
+use InfanaticaCepModule\Exception\EnderecoResponseException;
+use InfanaticaCepModule\Response\EnderecoResponseInterface;
 
 class CepService {
 
@@ -18,6 +20,10 @@ class CepService {
     {
         $cep = $this->removeNaoDigitos($cep);
         $endereco = $this->cepAdapter->getEnderecoByCep($cep);
+
+        if (! $endereco instanceof EnderecoResponseInterface){
+            throw new EnderecoResponseException();
+        }
 
         return $this->formatEndereco($endereco,$format);
     }
