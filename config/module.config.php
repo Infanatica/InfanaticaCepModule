@@ -64,7 +64,7 @@ return array(
             'InfanaticaCepModule\Service\CorreioControlAdapter' =>'InfanaticaCepModule\Factory\CorreioControlAdapterFactory'
         ),
         'aliases' => array(
-            'InfanaticaCepModule\Adapter\CepDefaultAdapter' => 'InfanaticaCepModule\Service\CorreioControlAdapter'
+            'InfanaticaCepModule\Adapter\CepDefaultAdapter' => 'InfanaticaCepModule\Service\PostmonAdapter'
         ),
     ),
 
