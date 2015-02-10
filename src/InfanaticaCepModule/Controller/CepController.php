@@ -41,16 +41,15 @@ class CepController extends AbstractActionController
             return $response;
         }
 
-
-
-
     }
 
     private function responseEnderecoComFormatado($endereco, $formato)
     {
         $arrayFormatos = array(
-            'xml'=>'text/xml; charset=utf-8',
-            'json'=> 'application/json; charset=utf-8'
+            'xml'   =>'text/xml; charset=utf-8',
+            'json'  => 'application/json; charset=utf-8',
+            'query' => 'text/plain; charset=utf-8',
+            'piped' => 'text/plain; charset=utf-8',
         );
         $response = $this->httpResponse;
         $response->getHeaders()->addHeaderLine('Content-Type', $arrayFormatos[$formato]);
