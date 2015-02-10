@@ -59,10 +59,11 @@ return array(
         ),
         'factories' => array(
             'InfanaticaCepModule\Service\CepService' =>'InfanaticaCepModule\Factory\CepServiceFactory',
-            'InfanaticaCepModule\Service\ViaCepAdapter' =>'InfanaticaCepModule\Factory\ViaCepAdapterFactory'
+            'InfanaticaCepModule\Service\ViaCepAdapter' =>'InfanaticaCepModule\Factory\ViaCepAdapterFactory',
+            'InfanaticaCepModule\Service\PostmonAdapter' =>'InfanaticaCepModule\Factory\PostmonAdapterFactory'
         ),
         'aliases' => array(
-            'InfanaticaCepModule\Adapter\CepDefaultAdapter' => 'InfanaticaCepModule\Service\ViaCepAdapter'
+            'InfanaticaCepModule\Adapter\CepDefaultAdapter' => 'InfanaticaCepModule\Service\PostmonAdapter'
         ),
     ),
 
