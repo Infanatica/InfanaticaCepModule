@@ -34,6 +34,10 @@ class PostmonAdapter implements CepAdapterInterface {
             throw new CepNotFoundException();
         }
 
+        if (empty($response)){
+            throw new CepNotFoundException();
+        }
+
         $response = json_decode($response,true);
 
         $enderecoResponse = $this->enderecoResponse;
