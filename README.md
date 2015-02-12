@@ -106,6 +106,8 @@ http[s]://domain/cep/21041020/xml
 
 [Correio Control](http://avisobrasil.com.br/correio-control/api-de-consulta-de-cep/) (Concluído)
 
+[Republica Virtual](http://www.republicavirtual.com.br/cep/) (Concluído)
+
 
 # Contruibuidores
 
