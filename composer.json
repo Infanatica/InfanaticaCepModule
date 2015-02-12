@@ -1,14 +1,12 @@
 {
-  "name": "infanatica/InfanaticaCepModule",
-  "description": "Módulo em Zend Framework 2 para consulta de endereço via CEP",
+  "name": "infanatica/infanatica-cep-module",
+  "description": "Modulo em Zend Framework 2 para consulta de endereco via CEP",
   "tyoe": "library",
   "license": "BSD-3-Clause",
   "keywords": [
     "cep",
     "correios",
     "endereco",
-    "endereço",
-    "module",
     "modulo",
     "zf2",
     "zend",
