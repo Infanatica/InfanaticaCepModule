@@ -4,48 +4,48 @@ Módulo em Zend Framework 2 para consulta de endereço via CEP
 
 # Instalação
 
-#### Instalação via clone do [InfanaticaCepModule](https://github.com/Infanatica/InfanaticaCepModule)
+#### Instalação via clone
 
-Clonar o projeto na pasta vendor ou module no seu projeto do Zend
+Clonar o projeto [InfanaticaCepModule](https://github.com/Infanatica/InfanaticaCepModule.git) na pasta "./vendor" ou "./module" no seu projeto em Zend Framework 2
 
-    ```bash
-    $ cd PASTA_DO_SKELETON_DO_ZEND_FRAMEWORK
+```bash
+    $ cd PASTA_DO_SKELETON_DO_ZEND_FRAMEWORK2
     $ cd vendor
     $ git clone https://github.com/Infanatica/InfanaticaCepModule.git
-    ```
+```
 
 #### Instalação via composer
 
 ###### Método 1
 
-Adicionar o projeto [InfanaticaCepModule](https://github.com/Infanatica/InfanaticaCepModule) no seu composer.json:
+Adicionar o projeto [InfanaticaCepModule](https://packagist.org/packages/infanatica/infanatica-cep-module) no seu composer.json:
 
 
-    ```json
+```json
     "require": {
         "infanatica/infanatica-cep-module": "dev-master"
     }
-    ```
-Agora informar para composer para fazer download do InfanaticaCepModule executando o comando:
+```
+Executar o comando "update" ou "install" do composer para fazer download do [InfanaticaCepModule](https://packagist.org/packages/infanatica/infanatica-cep-module)
 
-    ```bash
+```bash
     $ php composer.phar update
-    ```
+```
 
 ###### Método 2
 
-Executar o comando para atualizar o seu composer.json e efetuar o download
+Executar o comando "require" do composer para atualizar o seu composer.json e efetuar o download do [InfanaticaCepModule](https://packagist.org/packages/infanatica/infanatica-cep-module)
 
-	```bash
+```bash
 	php composer.phar require infanatica/infanatica-cep-module dev-master
-	```
+```
 
 
 #### Após a Instalação
 
 Adicionar ao seu arquivo `application.config.php` 
 
-    ```php
+```php
     <?php
     return array(
         'modules' => array(
@@ -54,9 +54,10 @@ Adicionar ao seu arquivo `application.config.php`
         ),
         // ...
     );
-    ```
+```
 
-# Utilização do Service (Exemplo no Controller)
+# Utilização do Service 
+#### Exemplo no \Application\Controller\InderController
 
 ```php
 	<?php
@@ -81,7 +82,10 @@ Adicionar ao seu arquivo `application.config.php`
     //...
 ```
 
-# Utilização do Controller
+# Utilização do Controller 
+#### Exemplos de rota para:
+#### \InfanaticaCepModule\Controller\CepController
+
 
 http[s]://domain/cep/NUMERO_DO_CEP</div>
 
@@ -96,11 +100,11 @@ http[s]://domain/cep/21041020/xml
 
 # Referências dos Adapters de pesquisa de CEP
 
-ViaCEP - http://viacep.com.br/ (Concluído)
+[ViaCEP](http://viacep.com.br/) (Concluído)
 
-Postmon - http://postmon.com.br/ (Concluído)
+[Postmon](http://postmon.com.br/) (Concluído)
 
-Correio Control - http://avisobrasil.com.br/correio-control/api-de-consulta-de-cep/ (Concluído)
+[Correio Control](http://avisobrasil.com.br/correio-control/api-de-consulta-de-cep/) (Concluído)
 
 
 # Contruibuidores
