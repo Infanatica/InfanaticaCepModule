@@ -19,3 +19,4 @@ script: phpunit
 notifications:
   email:
     - munizeverton@gmail.com
+    - diogomascarenha@gmail.com
