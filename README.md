@@ -1,3 +1,6 @@
+[![Latest Stable Version](https://poser.pugx.org/infanatica/infanatica-cep-module/v/stable)](https://packagist.org/packages/infanatica/infanatica-cep-module)
+[![Total Downloads](https://poser.pugx.org/infanatica/infanatica-cep-module/downloads)](https://packagist.org/packages/infanatica/infanatica-cep-module)
+[![Build Status](https://travis-ci.org/Infanatica/InfanaticaCepModule.svg?branch=master)](https://travis-ci.org/Infanatica/InfanaticaCepModule)
 # InfanaticaCepModule
 
 Módulo em Zend Framework 2 para consulta de endereço via CEP
