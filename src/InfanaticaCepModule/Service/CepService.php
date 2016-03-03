@@ -1,6 +1,7 @@
 <?php
 
 namespace InfanaticaCepModule\Service;
+
 use InfanaticaCepModule\Adapter\CepAdapterInterface;
 use InfanaticaCepModule\Exception\EnderecoFormatException;
 use InfanaticaCepModule\Exception\EnderecoResponseException;
