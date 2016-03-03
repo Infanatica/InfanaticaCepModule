@@ -20,4 +20,5 @@ return array(
     'InfanaticaCepModule\Response\EnderecoResponse'              => __DIR__ . '/src/InfanaticaCepModule/Response/EnderecoResponse.php',
     'InfanaticaCepModule\Response\EnderecoResponseInterface'     => __DIR__ . '/src/InfanaticaCepModule/Response/EnderecoResponseInterface.php',
     'InfanaticaCepModule\Service\CepService'                     => __DIR__ . '/src/InfanaticaCepModule/Service/CepService.php',
+    'InfanaticaCepModule\Fixture\FakeAdapter'                    => __DIR__ . '/tests/InfanaticaCepModule/Fixture/FakeAdapter.php',
 );
