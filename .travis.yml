@@ -20,3 +20,7 @@ notifications:
   email:
     - munizeverton@gmail.com
     - diogomascarenha@gmail.com
+
+addons:
+    code_climate:
+        repo_token: 0be074dd12c125f16a98aec0a14b005bd2c9f4bd4933238ed137e388100d5581
